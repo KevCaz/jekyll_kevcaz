@@ -1,0 +1,59 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">{{ site.title }}</h3>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li> <i class="fa fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li> <i class="fa fa-phone-square" aria-hidden="true"></i> {{ site.phone }} </li>
+          <li> <i class="fa fa-clock-o" aria-hidden="true"></i> Last update: {{site.update}} </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+              <i class="fa fa-github"></i><a href="https://github.com/{{ site.github_username }}"> {{site.github_username }}</a></li>
+          </li>
+          {% endif %}
+
+          {% if site.orcid %}
+          <li>
+            <i class="ai ai-orcid"></i><a href="http://orcid.org/{{ site.orcid }}"> ORCID </a></li>
+          </li>
+          {% endif %}
+
+          {% if site.rg_username %}
+          <li>
+            <i class="ai ai-researchgate-square"></i><a href="https://www.researchgate.net/profile/{{ site.rg_username }}"> K. Cazelles </a></li>
+          </li>
+          {% endif %}
+
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+        <p> Made with <i class="fa fa-heart" aria-hidden="true"></i>
+          using <a href="http://jekyllrb.com">jekyll</a> and
+          <a href="http://foundation.zurb.com/sites/docs/">foundation</a>.
+          Code source available on <a href="https://github.com/{{ site.github_username }}">
+          <i class="fa fa-github"></i></a>.</p>
+
+      </div>
+    </div>
+
+    <script src="/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+
+  </div>
+
+</footer>

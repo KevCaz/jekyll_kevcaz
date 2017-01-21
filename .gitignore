@@ -1,3 +1,10 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+*.pdf
+*.png
+*.jpeg
+assets/
+.DS_Store
+makefile
+node_modules/

@@ -1,0 +1,27 @@
+
+#map {
+  height: 300px;
+  width: 380px;
+  float: center;
+  display: inline-block;
+  background-color:black;
+  margin: 10px 10px 10px 10px;
+ }
+
+#map2 {
+  height: 300px;
+  width: 380px;
+  float: center;
+  display: inline-block;
+  background-color:black;
+  margin: 10px 10px 10px 10px;
+ }
+
+ #map_collaborators {
+   height: 400px;
+   width: 600px;
+   float: center;
+   display: inline-block;
+   background-color:black;
+   margin: 10px 10px 10px 10px;
+  }

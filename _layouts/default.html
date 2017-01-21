@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+  <article class="page-content">
+
+    <div class = "row">
+      <div id="nav" class="small-0 large-3 column">
+        <h4> Contents </h4>
+        <hr>
+        <ul class="vertical menu docs-nav" id="docs-menu">
+          <!--
+            <ul class="vertical menu" data-accordion-menu>
+              <li>
+                <a href="#">Item 1</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#">Item 1A</a></li>
+                  <li><a href="#">Item 1B</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Item 2</a></li>
+            </ul> -->
+          </ul>
+      </div>
+
+      <div class="small-12 large-9 columns"> {{ content }} </div>
+    </div>
+
+  </article>
+
+    {% include footer.html %}
+  </body>
+
+<!-- Creating the nav -->
+  <script src="{{site.baseurl}}/js/navigator.js"></script>
+
+</html>
