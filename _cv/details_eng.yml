@@ -7,7 +7,10 @@ geometry: letterpaper, left=40mm, right=20mm, top=20mm, bottom=20mm
 
 # Personal details
 name: Kevin Cazelles
-status: Phd in theoretical ecology
+status:
+  - title:
+  - title: Phd in theoretical ecology
+  - title: Agricultural Engineer
 nationality: french
 phone: "+33 6 38 45 42 79"
 email: kevin.cazelles@gmail.com
@@ -20,7 +23,6 @@ mainskills: "Biologie, Ecologie, Biogéographie, bio-informatique, modélisation
 
 
 experience:
-
 
 - years: "Summer 2012"
   employer: Ecole Normale Supérieure
@@ -62,12 +64,12 @@ education:
 - years: 2012-2016
   subject: \textbf{Phd Thesis}. \textit{Influence of biotic interactions on the geographic distribution of species.}
   institute: Université du Québec À Rimouski, Canada; Université de Montpellier, France (Joint PhD).
-  honour: PhD in Ecology
+  honour: Doctor of Philosophy in Ecology
   # {Phd Thesis. My main project is to find elegant methods to introduce both interactions among species and evolution in species distribution models.}
 - years: 2008--2012
   subject: \textbf{M.Sc Agronomy and Ecology}
   institute: AgroParisTech, Paris, France
-  honour: Diploma of Agronomy Engineer and Master degree in Ecology
+  honour: Diploma of Agronomy Engineer and Master of Science in Ecology and Evolution
 
 
 
@@ -119,22 +121,25 @@ skills:
   program:
     - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ R
     - $\blacksquare \blacksquare \blacksquare \blacksquare \square$ C/C++
-    - $\blacksquare \blacksquare \blacksquare \square \square$ Bash
-    - $\blacksquare \blacksquare \blacksquare \square \square$ Sage
     - $\blacksquare \blacksquare \blacksquare \square \square$ Matlab
     - $\blacksquare \square \square \square \square$ Python
     - $\blacksquare \square \square \square \square$ Julia
     - $\blacksquare \square \square \square \square$ Java
+    - $\blacksquare \blacksquare \blacksquare \square \square$ Sage
+    - $\blacksquare \blacksquare \blacksquare \square \square$ Bash
+    - $\blacksquare \blacksquare \blacksquare \blacksquare \square \square$ UNIX
+
+
+  document:
     - $\blacksquare \blacksquare \blacksquare \square \square$ HTML/CSS
     - $\blacksquare \blacksquare \blacksquare \square \square$ Javascript
     - $\blacksquare \blacksquare \square \square \square$ PostgreSQL
-
-  document:
-    - $\blacksquare \blacksquare \blacksquare \blacksquare \square$ Latex
-    - $\blacksquare \blacksquare \blacksquare \blacksquare \square$ Remark
-    - $\blacksquare \blacksquare \square \square \square$ Inkscape
-    - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ Microsoft Office & LibreOffice
+    - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ YAML
     - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ Markdown
+    - $\blacksquare \blacksquare \blacksquare \blacksquare \square$ Latex
+    - $\blacksquare \blacksquare \square \square \square$ Inkscape
+    - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ Microsoft Office
+    - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ LibreOffice
 
 
 

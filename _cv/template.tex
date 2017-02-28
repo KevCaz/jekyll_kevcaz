@@ -32,7 +32,11 @@
 
 % Enable multicolumns
 \usepackage{multicol}
-\setlength{\columnsep}{-3.5cm}
+\setlength{\columnsep}{-3cm}
+% \usepackage{vwcol}
+% largeur change
+
+
 
 % NUMBERING
 %--------------------------------
@@ -103,21 +107,20 @@
 \begin{document}
 
 
-$if(skills)$
 \begin{multicols}{2}
-$endif$
 
-{\Large \textbf{$name$}}\\[.14cm]
-$status$
+
+{\LARGE \textbf{$name$}}\\
+% \large \textbf{$status$}
 
 
 $if(nationality)$
-$nationality$
+\ifthenelse{\equal{$lang$}{fr}}{\textbf{Nationalité}}{\textbf{Nationality}}: $nationality$
 $endif$
 
-\vspace*{.25cm}
+\vspace*{.1cm}
 
-\faHome \quad  12 avenue Lavoisier \\ \hspace*{.6cm} 92500 Rueil-Malmaison \\ \hspace*{.6cm} France
+\faHome \quad 12 avenue Lavoisier \\ \hspace*{.6cm} 92500 Rueil-Malmaison \\ \hspace*{.6cm} France
 
 $if(phone)$
 \faPhone \quad $phone$
@@ -135,6 +138,8 @@ $if(github)$
 \faGithub \quad \href{https://github.com/$github$}{$github$}
 $endif$
 
+
+
 \vspace{.2cm}
 
 
@@ -144,34 +149,45 @@ $for(langage)$
 $endfor$
 $endif$
 
+
+
+% -------------
+
 $if(skills)$
 
 \columnbreak
 
-\vspace{.5cm}
 
-\ifthenelse{\equal{$lang$}{fr}}{
-  \section*{\textbf{Compétence}}}{
-  \section*{\textbf{Skills}}}
+$if(status)$
+$for(status)$
+{\large\textbf{$status.title$}} \\
+$endfor$
+$endif$
 
+%
+% \ifthenelse{\equal{$lang$}{fr}}{
+%   \section*{\textbf{Compétence principale}}}{
+%   \section*{\textbf{Mains Skills}}} \\
 
 
 
 %------------------
 \ifthenelse{\equal{$lang$}{fr}}{\textbf{Programmation Scientifique}}{\textbf{Scientific Programming}}
+\vspace{-.4cm}
 
-\begin{multicols}{3}
-
+\setlength{\columnsep}{0cm}
+\begin{multicols}{2}
 
 $for(skills.program)$
 $skills.program$\\
 $endfor$
 \end{multicols}
 
-\vspace{-.25cm}
 
-\ifthenelse{\equal{$lang$}{fr}}{\textbf{Préparation de document}}{\textbf{Document Preparation}}
-\vspace{-.25cm}
+\vspace{-.2cm}
+
+\ifthenelse{\equal{$lang$}{fr}}{\textbf{Web et Préparation de Document}}{\textbf{Web and Document Preparation}}
+\vspace{-.4cm}
 
 \begin{multicols}{2}
 
@@ -184,9 +200,9 @@ $endfor$
 \end{multicols}
 $endif$
 
-$if(intro)$
-$intro$
-$endif$
+% $if(intro)$
+% $intro$
+% $endif$
 
 
 %------------------
@@ -326,8 +342,8 @@ $endif$
 %------------------
 $if(tobepublished)$
 \ifthenelse{\equal{$lang$}{fr}}{
-  \section*{\textbf{In preparation or accepted articles}}}{
-  \section*{\textbf{Articles en préparation ou accepté}}}
+  \section*{\textbf{Articles en préparation ou accepté}}}{
+  \section*{\textbf{In preparation or accepted articles}}}
 \noindent
 
 \begin{enumerate}[leftmargin=*]
@@ -352,7 +368,7 @@ $endif$
 %------------------
 $if(reviewer)$
 \ifthenelse{\equal{$lang$}{fr}}{
-  \section*{\textbf{Réviseur pour les jounaux à comité de lecture suivant:}}}{
+  \section*{\textbf{Réviseur pour les jounaux à comité de lecture suivants~:}}}{
   \section*{\textbf{Reviewer for the following peer-reviewed journals:}}}
 
 $for(reviewer)$
