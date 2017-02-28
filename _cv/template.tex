@@ -110,10 +110,14 @@ $endif$
 {\Large \textbf{$name$}}\\[.14cm]
 $status$
 
-$for(address)$
-$address$\\
-$endfor$
 
+$if(nationality)$
+$nationality$
+$endif$
+
+\vspace*{.25cm}
+
+\faHome \quad  12 avenue Lavoisier \\ \hspace*{.6cm} 92500 Rueil-Malmaison \\ \hspace*{.6cm} France
 
 $if(phone)$
 \faPhone \quad $phone$
@@ -144,10 +148,18 @@ $if(skills)$
 
 \columnbreak
 
+\vspace{.5cm}
+
+\ifthenelse{\equal{$lang$}{fr}}{
+  \section*{\textbf{Compétence}}}{
+  \section*{\textbf{Skills}}}
+
+
+
+
 %------------------
 \ifthenelse{\equal{$lang$}{fr}}{\textbf{Programmation Scientifique}}{\textbf{Scientific Programming}}
 
-\vspace{-.5cm}
 \begin{multicols}{3}
 
 
@@ -156,10 +168,10 @@ $skills.program$\\
 $endfor$
 \end{multicols}
 
-\vspace{-.5cm}
+\vspace{-.25cm}
 
 \ifthenelse{\equal{$lang$}{fr}}{\textbf{Préparation de document}}{\textbf{Document Preparation}}
-\vspace{-.5cm}
+\vspace{-.25cm}
 
 \begin{multicols}{2}
 
@@ -304,6 +316,30 @@ $for(popularization)$
   $popularization.year$. $popularization.title$.
   \emph{$popularization.container-title$}.
   $if(popularization.url)$ \href{$popularization.url$}{Available online} $endif$
+}
+$endfor$
+\end{enumerate}
+
+$endif$
+
+
+%------------------
+$if(tobepublished)$
+\ifthenelse{\equal{$lang$}{fr}}{
+  \section*{\textbf{In preparation or accepted articles}}}{
+  \section*{\textbf{Articles en préparation ou accepté}}}
+\noindent
+
+\begin{enumerate}[leftmargin=*]
+
+$for(tobepublished)$
+\item{
+  $for(tobepublished.author)$
+    \ifthenelse{\equal{$tobepublished.author.family$}{Cazelles}}{\textbf{$tobepublished.author.family$ \fl{$tobepublished.author.given$.}}}{$tobepublished.author.family$ \fl{$tobepublished.author.given$.}}.,
+  $endfor$
+  $tobepublished.year$. $tobepublished.title$.
+  \emph{$tobepublished.container-title$}.
+  $if(tobepublished.url)$ \href{$popularization.url$}{Available online} $endif$
 }
 $endfor$
 \end{enumerate}

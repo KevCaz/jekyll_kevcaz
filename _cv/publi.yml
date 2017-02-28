@@ -1,22 +1,22 @@
 ---
 references:
-- id: Massol2016
+- id: Massol2017
   type: article-journal
   author:
   - family: Massol
     given: François
   - family: Dubart
     given: Maxime
-  - family: Vincent
-    given: Calcagno
+  - family: Calcagno
+    given: Vincent
   - family: Cazelles
     given: Kévin
-  - family: Claire
-    given: Jacquet
-  - family: Sonia
-    given: Kéfi
-  - family: Dominique
-    given: Gravel
+  - family: Jacquet
+    given: Claire
+  - family: Kéfi
+    given: Sonia
+  - family: Gravel
+    given: Dominique
   issued:
   - year: '2017'
   title: Island Biogeography of Food Webs

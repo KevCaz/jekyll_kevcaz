@@ -8,15 +8,13 @@ geometry: letterpaper, left=40mm, right=20mm, top=20mm, bottom=20mm
 # Personal details
 name: Kevin Cazelles
 status: Phd in theoretical ecology
-address:
-- 12 avenue Lavoisier
-- 92500 Rueil-Malmaison
-- France
 nationality: french
 phone: "+33 6 38 45 42 79"
 email: kevin.cazelles@gmail.com
 website: http://kevincazelles.fr
 github: KevCaz
+mainskills: "Biologie, Ecologie, Biogéographie, bio-informatique, modélisation mathématiques et statistiques"
+
 
 
 
@@ -36,7 +34,7 @@ experience:
   employer: Université de Montpellier
   unit: Institut des Sciences de l'Evolution
   job: "Four months’ training period, working on species distribution model and biotic interactions."
-  city: Paris, FFrance
+  city: Paris, France
   description:
     - working on species distribution model and biotic interactions.
 
@@ -120,14 +118,15 @@ teaching:
 skills:
   program:
     - $\blacksquare \blacksquare \blacksquare \blacksquare \blacksquare$ R
-    - $\blacksquare \blacksquare \blacksquare \blacksquare  \square$ C/C++
+    - $\blacksquare \blacksquare \blacksquare \blacksquare \square$ C/C++
     - $\blacksquare \blacksquare \blacksquare \square \square$ Bash
     - $\blacksquare \blacksquare \blacksquare \square \square$ Sage
-    - $\blacksquare \blacksquare \blacksquare \square  \square$ Matlab
+    - $\blacksquare \blacksquare \blacksquare \square \square$ Matlab
     - $\blacksquare \square \square \square \square$ Python
     - $\blacksquare \square \square \square \square$ Julia
     - $\blacksquare \square \square \square \square$ Java
-    - $\blacksquare \blacksquare \blacksquare \square \square$ HTML/CSS/Javascript
+    - $\blacksquare \blacksquare \blacksquare \square \square$ HTML/CSS
+    - $\blacksquare \blacksquare \blacksquare \square \square$ Javascript
     - $\blacksquare \blacksquare \square \square \square$ PostgreSQL
 
   document:
@@ -164,6 +163,108 @@ popularization:
     volume: 9.1
     url: http://accromath.uqam.ca/2014/02/la-biodiversite-en-territoires-isoles/
     category: popularization
+
+
+tobepublished:
+- id: Albouy2017
+  type: article-journal
+  author:
+  - family: Albouy
+    given: C.
+  - family: Archamabult
+    given: P.
+  - family: Appeltans
+    given: W.
+  - family: Araujo
+    given: M. B.
+  - family: Cazelles
+    given: K.
+  - family: Cirtwill
+    given: A. R.
+  - family: Fortin
+    given: Galizana Ibanez
+    suffix: M.-J. and
+  - family: Leroux
+    suffix: S. J.
+  - family: L.
+    given: Pelissier.
+  - family: Poisot
+    given: T.
+  - family: Stouffer
+    given: D.
+  - family: Wood
+    given: S. A.
+  - family: Gravel
+    given: D.
+  year: '2017'
+  title: The marine food web is globally connected
+  container-title: in prep
+
+- id: Cazelles2017
+  type: article-journal
+  author:
+  - family: Cazelles
+    given: K
+  - family: Albouy
+    given: C.
+  - family: Baiser
+    suffix: B
+  - family: Dalsgaard
+    given: Bo
+  - family: Farwig
+    given: Nina
+  - family: J.
+    given: Lehmann Louise
+  - family: N.
+    given: Mouquet
+  - family: Pelissier
+    given: L.
+  - family: Svenning
+    given: J.-C.
+  - family: Talluto
+    given: Matthew V.
+  - family: W
+    given: Thuillier
+  - family: D.
+    given: Gravel
+  year: '2017'
+  title: Do interacting species co-occur differently from not-interacting species?
+  container-title: in prep
+  volume: '9'
+  URL: http://link.springer.com/10.1007/s12080-015-0281-9
+
+- id: Roslin2017
+  type: article-journal
+  author:
+  - family: Cazelles
+    given: K
+  - family: Albouy
+    given: C.
+  - family: Baiser
+    suffix: B
+  - family: Dalsgaard
+    given: Bo
+  - family: Farwig
+    given: Nina
+  - family: J.
+    given: Lehmann Louise
+  - family: N.
+    given: Mouquet
+  - family: Pelissier
+    given: L.
+  - family: Svenning
+    given: J.-C.
+  - family: Talluto
+    given: Matthew V.
+  - family: W
+    given: Thuillier
+  - family: D.
+    given: Gravel
+  year: '2017'
+  title: Food-web structure of willow-galling sawflies and their natural enemies across
+    Europe
+  container-title: accepted in Ecology (data paper)
+
 
 
 
