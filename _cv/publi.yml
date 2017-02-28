@@ -13,15 +13,19 @@ references:
     given: Kévin
   - family: Claire
     given: Jacquet
-  - family: Kéfi Sonia Gravel
-    given: Dominique
+  - family: Sonia
+    given: Kéfi
+  - family: Dominique
+    given: Gravel
   issued:
   - year: '2017'
   title: Island Biogeography of Food Webs
-  container-title: Theoretical Ecology
-  page: xx-xx
+  container-title: Advances in Ecological Research
+  page: '183-262'
   volume: '56'
-  URL: http://www.sciencedirect.com/science/article/pii/S0065250416300538
+  keyword: Biogeography,Co-occurrence,Ecological networks,Indirect interactions,Null
+    models
+  URL: http://link.springer.com/10.1007/s12080-015-0281-9
   DOI: 10.1016/bs.aecr.2016.10.004
   ISSN: '1874-1738'
 

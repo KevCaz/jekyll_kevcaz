@@ -48,8 +48,6 @@ function add_hyperlink(arg, arg2) {
 collabo = YAML.load("js/collaborators.yml");
 
 
-
-
 for (var i=0; i<collabo.length; i++){
   // alert("collabo[i].institution.length");
   // alert(collabo[i].institution.lat)
